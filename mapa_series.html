@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5272c65be1c88e0ea7beb2187c403810 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5272c65be1c88e0ea7beb2187c403810" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5272c65be1c88e0ea7beb2187c403810 = L.map(
+                "map_5272c65be1c88e0ea7beb2187c403810",
+                {
+                    center: [37.3928766, 127.4482878],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_71fd84c1da5ee45acf68dd42e9425f08 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_71fd84c1da5ee45acf68dd42e9425f08.addTo(map_5272c65be1c88e0ea7beb2187c403810);
+        
+    
+            var marker_58ccd58a889558328663d1d4805796ff = L.marker(
+                [37.51972, 126.94],
+                {
+}
+            ).addTo(map_5272c65be1c88e0ea7beb2187c403810);
+        
+    
+            var icon_9561d749342f41419a1c1a7e2b186e6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9014277b4c981daa0500e2d4efbe4bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef007d0fdc80a239a3b472f2a4229181 = $(`<div id="html_ef007d0fdc80a239a3b472f2a4229181" style="width: 100.0%; height: 100.0%;">         <b>La infiltrada Srta. Hong</b><br>         Director: Park Seon-ho<br>         Año: 2026<br>         Género: drama<br>         Protagonista: Park Shin-hye<br>         Capítulos: 16<br>         Latitud: 37.51972<br>         Longitud: 126.94     </div>`)[0];
+                popup_e9014277b4c981daa0500e2d4efbe4bb.setContent(html_ef007d0fdc80a239a3b472f2a4229181);
+            
+        
+
+        marker_58ccd58a889558328663d1d4805796ff.bindPopup(popup_e9014277b4c981daa0500e2d4efbe4bb)
+        ;
+
+        
+    
+    
+            marker_58ccd58a889558328663d1d4805796ff.bindTooltip(
+                `<div>
+                     La infiltrada Srta. Hong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_58ccd58a889558328663d1d4805796ff.setIcon(icon_9561d749342f41419a1c1a7e2b186e6a);
+            
+    
+            var marker_fb8ea5ae3df4b251978be44f146e8e9f = L.marker(
+                [37.525337, 127.050415],
+                {
+}
+            ).addTo(map_5272c65be1c88e0ea7beb2187c403810);
+        
+    
+            var icon_b277dbf3ec0c4786ba3dc9d12f950fe8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d0bd45b2c2bc634391786a33219b3ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e76ac03d29c2e0e3bca59c27637dc10 = $(`<div id="html_4e76ac03d29c2e0e3bca59c27637dc10" style="width: 100.0%; height: 100.0%;">         <b>Mi nemésis con aires de realeza</b><br>         Director: Han Tae-seop<br>         Año: 2026<br>         Género: drama<br>         Protagonista: Lim Ji-yeon<br>         Capítulos: 14<br>         Latitud: 37.525337<br>         Longitud: 127.050415     </div>`)[0];
+                popup_8d0bd45b2c2bc634391786a33219b3ec.setContent(html_4e76ac03d29c2e0e3bca59c27637dc10);
+            
+        
+
+        marker_fb8ea5ae3df4b251978be44f146e8e9f.bindPopup(popup_8d0bd45b2c2bc634391786a33219b3ec)
+        ;
+
+        
+    
+    
+            marker_fb8ea5ae3df4b251978be44f146e8e9f.bindTooltip(
+                `<div>
+                     Mi nemésis con aires de realeza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb8ea5ae3df4b251978be44f146e8e9f.setIcon(icon_b277dbf3ec0c4786ba3dc9d12f950fe8);
+            
+    
+            var marker_92aad491f4621a8b1cf076999e88d222 = L.marker(
+                [37.377822, 128.394359],
+                {
+}
+            ).addTo(map_5272c65be1c88e0ea7beb2187c403810);
+        
+    
+            var icon_a099809a7cd345f56369b4db331739de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_272e3d478ca2b97067567517a0a68da8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b8fce3801d399a3f70df5c2edcbb59bf = $(`<div id="html_b8fce3801d399a3f70df5c2edcbb59bf" style="width: 100.0%; height: 100.0%;">         <b>Amor en el laboratorio</b><br>         Director: Kang Il-soo<br>         Año: 2025<br>         Género: drama<br>         Protagonista: Lee Sun-bin<br>         Capítulos: 12<br>         Latitud: 37.377822<br>         Longitud: 128.394359     </div>`)[0];
+                popup_272e3d478ca2b97067567517a0a68da8.setContent(html_b8fce3801d399a3f70df5c2edcbb59bf);
+            
+        
+
+        marker_92aad491f4621a8b1cf076999e88d222.bindPopup(popup_272e3d478ca2b97067567517a0a68da8)
+        ;
+
+        
+    
+    
+            marker_92aad491f4621a8b1cf076999e88d222.bindTooltip(
+                `<div>
+                     Amor en el laboratorio
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_92aad491f4621a8b1cf076999e88d222.setIcon(icon_a099809a7cd345f56369b4db331739de);
+            
+    
+            var marker_3f6abd9d2ace512b6cd334b4b873eef9 = L.marker(
+                [36.981304, 127.935905],
+                {
+}
+            ).addTo(map_5272c65be1c88e0ea7beb2187c403810);
+        
+    
+            var icon_fdb65700d8735193d0325549482bfebb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91b34c0fc598c2818fa9cbe62ddda57f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc78b9c1100c9a05b59578f41dfcf85e = $(`<div id="html_fc78b9c1100c9a05b59578f41dfcf85e" style="width: 100.0%; height: 100.0%;">         <b>Un amor que no se agota</b><br>         Director: Ahn Jong-yeon<br>         Año: 2026<br>         Género: drama<br>         Protagonista: Ahn Hyo-seop<br>         Capítulos: 12<br>         Latitud: 36.981304<br>         Longitud: 127.935905     </div>`)[0];
+                popup_91b34c0fc598c2818fa9cbe62ddda57f.setContent(html_fc78b9c1100c9a05b59578f41dfcf85e);
+            
+        
+
+        marker_3f6abd9d2ace512b6cd334b4b873eef9.bindPopup(popup_91b34c0fc598c2818fa9cbe62ddda57f)
+        ;
+
+        
+    
+    
+            marker_3f6abd9d2ace512b6cd334b4b873eef9.bindTooltip(
+                `<div>
+                     Un amor que no se agota
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3f6abd9d2ace512b6cd334b4b873eef9.setIcon(icon_fdb65700d8735193d0325549482bfebb);
+            
+    
+            var marker_cc3e8c2e43fedd731cdc81cadf3e89ac = L.marker(
+                [37.5602, 126.92076],
+                {
+}
+            ).addTo(map_5272c65be1c88e0ea7beb2187c403810);
+        
+    
+            var icon_05a70586ae00f722be314e08ecb1f6da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0308683f0314022e755f42ad8ed3db7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5611378d71810179bb4f11d4d4497af5 = $(`<div id="html_5611378d71810179bb4f11d4d4497af5" style="width: 100.0%; height: 100.0%;">         <b>Mi primer amor de verdad</b><br>         Director: Oh Jin-suk<br>         Año: 2019<br>         Género: drama<br>         Protagonista: Ji Soo<br>         Capítulos: 16<br>         Latitud: 37.5602<br>         Longitud: 126.92076     </div>`)[0];
+                popup_f0308683f0314022e755f42ad8ed3db7.setContent(html_5611378d71810179bb4f11d4d4497af5);
+            
+        
+
+        marker_cc3e8c2e43fedd731cdc81cadf3e89ac.bindPopup(popup_f0308683f0314022e755f42ad8ed3db7)
+        ;
+
+        
+    
+    
+            marker_cc3e8c2e43fedd731cdc81cadf3e89ac.bindTooltip(
+                `<div>
+                     Mi primer amor de verdad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cc3e8c2e43fedd731cdc81cadf3e89ac.setIcon(icon_05a70586ae00f722be314e08ecb1f6da);
+            
+    
+            tile_layer_71fd84c1da5ee45acf68dd42e9425f08.addTo(map_5272c65be1c88e0ea7beb2187c403810);
+        
+    
+                marker_58ccd58a889558328663d1d4805796ff.setIcon(icon_9561d749342f41419a1c1a7e2b186e6a);
+            
+    
+                marker_fb8ea5ae3df4b251978be44f146e8e9f.setIcon(icon_b277dbf3ec0c4786ba3dc9d12f950fe8);
+            
+    
+                marker_92aad491f4621a8b1cf076999e88d222.setIcon(icon_a099809a7cd345f56369b4db331739de);
+            
+    
+                marker_3f6abd9d2ace512b6cd334b4b873eef9.setIcon(icon_fdb65700d8735193d0325549482bfebb);
+            
+    
+                marker_cc3e8c2e43fedd731cdc81cadf3e89ac.setIcon(icon_05a70586ae00f722be314e08ecb1f6da);
+            
+</script>
+</html>

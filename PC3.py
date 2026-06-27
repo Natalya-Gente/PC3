@@ -42,7 +42,7 @@ import streamlit.components.v1 as components
 # Crea una barra lateral (sidebar) en la aplicación.
 with st.sidebar:
     opciones = option_menu(None,['Inicio', 'Experiencia', 'Gráficos'] , 
-        icons=['0-circle','1-circle', '2-circle'], menu_icon=None, default_index=0)
+        icons=['alphabet','backpack4','bar-chart-line-fill'], menu_icon=None, default_index=0)
     # Crea un menú de opciones dentro de la barra lateral -> option_menu(...)
     # Título que se mostrará encima del menú -> "Selecciona una sección: "
     # Lista de opciones disponibles para navegar -> ['Inicio', 'Experiencia', 'Gráficos']
@@ -68,7 +68,7 @@ with st.sidebar:
 # Verifica si el usuario ha seleccionado la opción "Inicio" en el menú de navegación horizontal.
 # OJO: En caso que elijas el menú de la barra lateral (sidebar) debes cambiar "selected" por "opciones"
 if opciones == 'Inicio':
-    st.markdown("<h1 style='text-align: center;'>Nombre del blog</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Blog :)</h1>", unsafe_allow_html=True)
     # Muestra un título principal utilizando HTML -> st.markdown("...", unsafe_allow_html=True)
     # La etiqueta <h1> define un encabezado de nivel 1 -> "<h1 ...>...</h1>"
     # El estilo CSS 'text-align: center' centra el texto -> style='text-align: center;'
@@ -78,20 +78,14 @@ if opciones == 'Inicio':
     col1, col2 = st.columns(2)
 
     # Muestra una imagen en la primera columna
-    col1.image("ellie.png", caption='Ellie', width=300)
+    col1.image("fotoooou.png", caption='Natalya', width=300)
     # "ellie.png" es el archivo de imagen que se visualizará -> Aquí debes reemplazar por tu foto de perfil
     # El texto "Ellie" aparecerá como descripción de la imagen
     # width=300 establece el ancho de la imagen en 300 píxeles
 
     # Define una cadena de texto multilínea que contiene una guía para redactar una presentación personal.
     texto = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres?, 
-    ¿De dónde eres?, 
-    ¿Qué estudias?, 
-    ¿Qué te gusta de tu carrera?, 
-    ¿Qué te gustaría hacer en el futuro?, 
-    ¿Qué te gusta hacer en tu tiempo libre?
+    Hola, yo soy Natalya y tengo 19 años. Soy de Lima - Perú. Actualmente estudio el 5to ciclo de la carrera de Periodismo en la PUCP. Me gusta esta carrera porque te permite contar diferentes historias y transmitir la información especializándote en diversos formatos como escrito, video, radio, etc. A mí particularmente me gusta el formato audiovisual y la fotografía. En el futuro me gustaría contribuir en la creación de videos informativos que sean sencillos de comprender y fotografías que ilustren pero que a su vez no pierdan el sentido informativo. Por otro lado, en mi tiempo me gusta leer, ver series con planos y secuencias interesantes, etc. Además, me agrada pasar tiempo con mi familia y con mi perrita Luna, a ambas nos encanta el color rosado.
     """
 
     # Muestra el texto en la segunda columna utilizando HTML
